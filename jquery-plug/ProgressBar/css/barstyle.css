@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+body,html,div,ul,li,a{
+	margin:0;
+	padding:0;
+	}
+body,html{
+	margin:0; padding:0;
+	height:100%;
+	width:100%;
+	font-family:"微软雅黑"
+	}
+body{
+	text-align:center;
+	background:#A69D9D;
+	}
+.controlBox{
+	width:400px;
+	height:20px;
+	position:fixed;
+	left:50%;
+	top:50%;
+	margin-left:-200px;
+	margin-top:-10px;
+	}
+@media screen and (max-width:600px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+.controlBox{
+	width:100%;
+	height:40px;
+	position:fixed;
+	top:50%;
+	left:0px;
+	margin-left:0px;
+	margin-top:-10px;
+	}
+}
+.control{
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	display:inline-block;
+	}
+.BeginTime{
+	width:40px;
+	height:20px;
+	color:#fff;
+	font-size:8px;
+	line-height:20px;
+	}
+.TheBar{
+	position:relative;
+	width:calc(100% - 114px);
+	margin-left:2px;
+	height:4px;
+	border-radius:2px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	background:#EBE8E8;
+	overflow:visible;
+	}
+.TheColorBar{
+	width:0px;
+	border-radius:0px;
+	-webkit-border-radius:0px;
+	-moz-border-radius:0px;
+	height:100%;
+	background:#3498DB;
+	float:left;
+	}
+.TimeBall{
+	width:10px;
+	height:10px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	background:#3498DB;
+	position:absolute;
+	left:0px;
+	top:-3px;
+	z-index:2;
+	cursor:pointer;
+	}
+.FinishTime{
+	width:40px;
+	height:20px;
+	color:#fff;
+	font-size:8px;
+	line-height:20px;
+	}
+.BeginTime,.FinishTime,.TheBar{
+	display:inline-block;
+	vertical-align:middle;
+	padding:0px;
+	}
+.contralButton{
+	width:80px;
+	height:40px;
+	outline:none;
+	color:#fff;
+	background:#3498Db;
+	border:0;
+	font-size:18px;
+	font-weight:bold;
+	line-height:40px;
+	text-align:center;
+	cursor:pointer;
+	}

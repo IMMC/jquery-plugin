@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>轮播图</title>
+    <link href="css/slideStyle.css" rel="stylesheet">
+</head>
+<body>
+<div id="text"><!-- 盒子-->
+</div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-slideShow.js"></script>
+<script>
+    var image=["images/image1.jpg","images/image2.jpg","images/image3.jpg","images/image4.jpg"];
+    var href=["https://www.baidu.com","http://www.jq22.com"];
+    $("#text").slide({images:image,//必选
+        autoPlay:true,
+        href:href,
+       // height:200,//可指定轮播图高度
+        interval:6000});
+</script>
+</body>
+</html>

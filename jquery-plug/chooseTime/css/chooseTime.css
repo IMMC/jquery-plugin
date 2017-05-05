@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* CSS Document */
+.chooseTimebox{
+	z-index:9999;
+	width:240px;
+	min-height:100px;
+	background:#fff;
+	-webkit-box-shadow: #666 0px 0px 7px;  
+    -moz-box-shadow: #666 0px 0px 7px;  
+    box-shadow: #666 0px 0px 7px; 
+	color:#666;
+	font-size:14px;
+	position:absolute;
+	font-weight:bold;
+	display:none;
+	}
+	/*时间盒子*/
+.chooseTimebox .timeboxhead{
+	width:100%;
+	height:30px;
+	background-color:#DFE5F4;
+	text-align:center;
+	display:inline-block;
+	}
+/**/
+.timeboxhead span{
+	font-weight:bold;
+	}
+.timeboxhead span:hover{
+	color:#3498DB;
+	}
+.timeboxhead .lastyear{
+	width:20px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+	cursor:pointer;
+	color:#928D8D;
+	float:left;
+	}
+.timeboxhead .lastmonth{
+	width:20px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+	cursor:pointer;
+	color:#928D8D;
+	float:left;
+	}
+.showtimebox{
+	width:160px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	color:#928D8D;
+	float:left;
+	}
+	.timeboxhead .nextyear{
+	width:20px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+	cursor:pointer;
+	color:#928D8D;
+	float:left;
+	}
+.timeboxhead .nextmonth{
+	width:20px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+	cursor:pointer;
+	color:#928D8D;
+	float:left;
+	}
+	/* 头部*/
+.chooseTimebox .timeweek{
+	width:240px;
+	margin:0 auto;
+	height:30px;
+	padding:0px;
+	line-height:30px;
+	}
+.chooseTimebox .timeweek ul{
+	width:240px;
+	padding:0px;
+	margin-left:15px;
+	font-size:0;
+	}
+.chooseTimebox .timeweek ul li{
+	width:30px;
+	height:30px;
+	line-height:30px;
+	display:inline-block;
+	font-size:12px;
+	margin-left:0px;
+	text-align:center;
+	list-style:none;
+	}/*
+	*****星期数*******
+	*/
+.chooseTimebox .allday{
+	width:236px;
+	margin:0 auto;
+	padding:0px;
+	margin-top:5px;
+}
+.chooseTimebox .allday ul{
+	width:236px;
+	margin-left:-32px;}
+.chooseTimebox .allday ul li{
+	display:inline-block;
+	width:30px;
+	height:30px;
+	border:#F0ECEC 1px solid;
+	list-style:none;
+	cursor:pointer;
+	line-height:30px;
+	text-align:center;
+	vertical-align:top;
+	}
+.chooseTimebox .allday ul li:hover{
+	background:#3498DB;
+	color:#fff;
+	}
+.background{
+	background:#3498DB;
+	color:#fff;
+	}
+.cantclick{
+	background:rgba(180,177,177,0.8);
+	}
+.timectrl{
+	width:100%;
+	height:30px;
+	margin-bottom:10px;
+	}
+.timectrl a{
+	width:60px;
+	height:25px;
+	background:#3498DB;
+	display:inline-block;
+	text-align:center;
+	line-height:25px;
+	color:#fff;
+	margin-left:40px;
+	text-decoration:none;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;	}
+.timectrl a:hover{
+	-webkit-box-shadow:#3498DB 0px 0px 7px;  
+    -moz-box-shadow:#3498DB 0px 0px 7px;  
+    box-shadow:#3498DB 0px 0px 7px; 
+	}
+	/*
+	*******日期样式*******
+	*/

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/chooseTime.css" rel="stylesheet" type="text/css">
+</head>
+<style type="text/css">
+.test{
+	background:#8E3738;
+	color:#fff;
+	width:100px;
+	height:50px;
+	margin-left:100px;
+	line-height:50px;
+	text-align:center;
+	}
+</style>
+<body>
+<div class="test"></div><br>
+<input type="text" id="test">
+</body>
+<script src="../slide/js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-chooseTime.mini.js"></script>
+<script type="text/javascript">
+	$('.test').click(function(e){
+		e.stopPropagation();
+		$('.test').chooseTime({begintime:"2015-11-13",adminTime:'2015-12-20'});
+		var m=d.getMonth() + 1;
+		alert(d);
+		});
+	$('#test').focus(function(e){
+		e.stopPropagation();
+		$('#test').chooseTime();
+		});
+</script>
+</html>

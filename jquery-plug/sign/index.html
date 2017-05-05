@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="css/signStyle.css" rel="stylesheet">
+<title>标记</title>
+</head>
+<style type="text/css">
+body,html,div,ul,li,a{
+	margin:0;
+	padding:0;
+	}
+body,html{
+	margin:0; padding:0;
+	height:100%;
+	width:100%;
+	font-family:"微软雅黑"
+	}
+body{
+	text-align:center;
+	background:#A69D9D;
+	}
+.imagebox{
+	top:80px;
+	width:800px;
+	height:auto;
+	margin:0 auto;
+	position:relative;
+	}
+.imagebox img{
+	width:100%;
+	}
+</style>
+<body>
+	<div class="imagebox" id="signx">
+		<img src="image/fj.jpg" >
+	</div>
+</body>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-sign.mini.js"></script>
+<script>
+	$.sign.bindSign('#signx');//初始化
+	//$.sign.setSignColor('#3498DB'); 设置标记框颜色
+	//$.sign.setBodyColor('rgba(255,255,255,0.5)'); 设置提示背景颜色
+	//$.sign.setFontColor('#000');//设置字体颜色
+	//var m=$.sign.getSignMessage();//获取所有标记数据，返回为数组
+	var data=[{left:100,top:20,message:"测试"},{left:300,top:100,message:"测试2"}];
+	$.sign.loadingSign(data);//载入标记数据
+</script>
+</html>
